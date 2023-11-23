@@ -64,11 +64,11 @@ function Login() {
     });
   return (
     <div className="w-full h-screen flex items-center">
-      <div className="flex flex-col gap-10 border-solid border-2 rounded-lg border-red-600  py-4 px-6 sm:w-[500px] w-[600px] mx-auto">
+      <div className="flex flex-col gap-10 border-solid  rounded-lg border-red-600  py-4 px-6 sm:w-[500px] w-[600px] mx-auto">
         <h1 className="text-center flex-1 text-2xl font-semibold">Login</h1>
         <form onSubmit={handleSubmit} className="w-[100%] flex flex-col gap-5">
           <input
-            className=" px-3 py-4 border-solid border-2 focus:outline-none border-slate-500  rounded-lg"
+            className=" block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
             placeholder="Email"
             name="email"
             value={values.email}
@@ -81,7 +81,7 @@ function Login() {
           )}
           <div className="flex gap-3">
             <input
-              className="flex-1 px-3 py-4 border-solid border-2 focus:outline-none border-slate-500  rounded-lg"
+              className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6s"
               placeholder="Password"
               name="password"
               value={values.password}
@@ -111,7 +111,7 @@ function Login() {
           ) : (
             <button
               type="submit"
-              className="bg-slate-400 py-4 rounded-lg text-xl hover:opacity-90 uppercase font-semibold"
+              className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Log In
             </button>

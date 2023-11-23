@@ -27,20 +27,20 @@ function Header() {
   };
   return (
     <>
-      <nav class="flex justify-between lg:px-20 md:px-20 py-5 items-center sm:px-10 shadow-md">
-        <h1 class="text-xl font-bold">
-          <Link to={"/home"}>Notes App</Link>
-        </h1>
-        <div>
-          <button
-            onClick={Logout}
-            className="flex items-center gap-3 border-black border-2 px-3 py-2  rounded-full"
-          >
-            <CiLogout className="text-xl" />
-            Logout
-          </button>
-        </div>
-      </nav>
+       <nav className="flex justify-between px-6 py-3 items-center shadow-md">
+      <h1 className="text-2xl font-bold text-indigo-600">
+        <Link to="/home">Notes App</Link>
+      </h1>
+      <div>
+        <button
+          onClick={Logout}
+          className="flex items-center gap-2 border border-indigo-600 px-3 py-2 rounded-full text-indigo-600 hover:bg-indigo-600 hover:text-white"
+        >
+          <CiLogout className="text-xl" />
+          Logout
+        </button>
+      </div>
+    </nav>
       <ToastContainer
         position="top-center"
         autoClose={5000}

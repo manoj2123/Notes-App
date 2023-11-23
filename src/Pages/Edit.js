@@ -91,8 +91,8 @@ function Edit() {
       <Header />
       <div className="container mx-auto py-16">
         <form onSubmit={(e) => handleSubmit(e)} className="space-y-6">
-          <div className="space-y-1">
-            <label htmlFor="firstname" className="font-medium">
+          <div className="space-y-6">
+            <label htmlFor="firstname" className="font-medium text-2xl bg-gray-300 p-2 rounded-md">
               Title
             </label>
             <input
@@ -105,8 +105,8 @@ function Edit() {
             />
           </div>
 
-          <div className="space-y-1">
-            <label htmlFor="email" className="font-medium">
+          <div className="space-y-6">
+            <label htmlFor="email" className="font-medium text-2xl bg-gray-300 p-2 rounded-md">
               Description
             </label>
             <ReactQuill
@@ -127,7 +127,7 @@ function Edit() {
             ) : (
               <button
                 type="submit"
-                className="bg-blue-800 p-4 rounded-full hover:text-white transition-all duration-100 hover:opacity-90 text-white uppercase"
+                className="bg-green-800 p-4 rounded-full hover:text-white transition-all duration-100 hover:opacity-90 text-white uppercase"
               >
                 Create note
               </button>

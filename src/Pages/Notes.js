@@ -47,19 +47,19 @@ function Notes() {
           <div className="flex flex-col gap-7 border-black border-2 p-5 rounded-lg overflow-auto">
             <Link
               to={"/home"}
-              className="flex justify-center items-center gap-2 bg-[#2C4251] w-[100px] text-white p-4 rounded-full hover:opacity-90"
+              className="flex justify-center items-center gap-2 bg-[#ef9a9a] w-[100px] text-white p-4 rounded-full hover:opacity-90"
             >
               <IoMdArrowRoundBack />
               <button>Back</button>
             </Link>
-            <div className="flex items-center gap-4">
-              <h1 className="text-2xl font-bold underline uppercase">
+            <div className="bg-blue-500 text-white px-3 py-2 rounded-md">
+              <h1 className="font-semibold text-xl">
                 Title :
               </h1>
               <p className="font-semibold text-2xl">{title}</p>
             </div>
-            <div className="flex flex-col gap-4">
-              <h1 className="text-2xl font-bold underline uppercase">
+            <div className="bg-blue-500 text-white px-3 py-2 rounded-md">
+              <h1 className="font-semibold text-xl">
                 Description :
               </h1>
               <div
